@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1() {
+            var a = document.getElementById("num").value;
+            var b = document.getElementById("num2").value;
+
+            var mul = parseInt(a) * parseInt(b);
+            document.getElementById("result").innerHTML = mul;
+        }
+
+        function fun2() {
+            var a = document.getElementById("num").value;
+            var b = document.getElementById("num2").value;
+
+            if (parseInt(b) === 0) {
+                document.getElementById("result").innerHTML = "Cannot divide by zero.";
+            } else {
+                var div = parseInt(a) / parseInt(b);
+                document.getElementById("result").innerHTML = div;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Multiplication and Division</h2>
+    1st Number: <input id="num" type="number">
+    2nd Number: <input id="num2" type="number">
+    <br>
+    <br>
+    <button onclick="fun1()">Multiply</button>
+    <button onclick="fun2()">Divide</button>
+    <br>
+    <br>
+    The result is: <h2 id="result"></h2>
+</body>
+</html>
