@@ -1,0 +1,13 @@
+
+#build{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mid img {
+    margin: 0px;
+    padding: 0px;
+  
+   
+    width: 100%;
+}
